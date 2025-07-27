@@ -1,0 +1,839 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medical Tourism Destinations - Go4Health Global | World-Class Healthcare</title>
+    <meta name="description" content="Explore our global network of premier medical tourism destinations across Europe, North America, Middle East, and Africa. Quality healthcare at affordable prices.">
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- AOS (Animate On Scroll) -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top custom-navbar">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="images/logo.svg" alt="Go4Health Global" height="50">
+            </a>
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="aboutDropdown" role="button" data-bs-toggle="dropdown">
+                            About
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="about.html">About Us</a></li>
+                            <li><a class="dropdown-item" href="about.html#team">Our Team</a></li>
+                            <li><a class="dropdown-item" href="about.html#accreditations">Accreditations</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="servicesDropdown" role="button" data-bs-toggle="dropdown">
+                            Services
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="services.html">All Services</a></li>
+                            <li><a class="dropdown-item" href="services.html#medical-consultation">Medical Consultation</a></li>
+                            <li><a class="dropdown-item" href="services.html#travel-coordination">Travel Coordination</a></li>
+                            <li><a class="dropdown-item" href="services.html#post-care">Post-Care Support</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="destinations.html">Destinations</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="resourcesDropdown" role="button" data-bs-toggle="dropdown">
+                            Resources
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="blog.html">Blog & News</a></li>
+                            <li><a class="dropdown-item" href="faq.html">FAQ</a></li>
+                            <li><a class="dropdown-item" href="patient-stories.html">Patient Stories</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="btn btn-primary ms-2" href="#consultation">Free Consultation</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section-small">
+        <div class="hero-overlay"></div>
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-12 text-center" data-aos="fade-up">
+                    <h1 class="hero-title">Global Healthcare Destinations</h1>
+                    <p class="hero-subtitle">World-Class Medical Care Across Four Continents</p>
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb justify-content-center">
+                            <li class="breadcrumb-item"><a href="index.html" class="text-white">Home</a></li>
+                            <li class="breadcrumb-item active text-white" aria-current="page">Destinations</li>
+                        </ol>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Destinations Overview -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row justify-content-center mb-5">
+                <div class="col-lg-8 text-center" data-aos="fade-up">
+                    <h2 class="section-title">Choose Your Destination</h2>
+                    <p class="section-subtitle">Our carefully selected partner hospitals and clinics offer world-class medical care with significant cost savings</p>
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="col-lg-6 col-xl-3 mb-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="destination-overview-card" data-destination="europe">
+                        <div class="destination-flag">
+                            <i class="fas fa-flag"></i>
+                        </div>
+                        <h3>Europe</h3>
+                        <p>Advanced medical technology and renowned specialists</p>
+                        <div class="destination-stats">
+                            <div class="stat">
+                                <span class="stat-number">15</span>
+                                <span class="stat-label">Hospitals</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-number">40%</span>
+                                <span class="stat-label">Savings</span>
+                            </div>
+                        </div>
+                        <a href="#europe" class="btn btn-outline-primary btn-sm">Explore</a>
+                    </div>
+                </div>
+                
+                <div class="col-lg-6 col-xl-3 mb-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="destination-overview-card" data-destination="north-america">
+                        <div class="destination-flag">
+                            <i class="fas fa-flag"></i>
+                        </div>
+                        <h3>North America</h3>
+                        <p>Cutting-edge treatments and world-renowned institutions</p>
+                        <div class="destination-stats">
+                            <div class="stat">
+                                <span class="stat-number">12</span>
+                                <span class="stat-label">Hospitals</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-number">30%</span>
+                                <span class="stat-label">Savings</span>
+                            </div>
+                        </div>
+                        <a href="#north-america" class="btn btn-outline-primary btn-sm">Explore</a>
+                    </div>
+                </div>
+                
+                <div class="col-lg-6 col-xl-3 mb-4" data-aos="fade-up" data-aos-delay="300">
+                    <div class="destination-overview-card" data-destination="middle-east">
+                        <div class="destination-flag">
+                            <i class="fas fa-flag"></i>
+                        </div>
+                        <h3>Middle East</h3>
+                        <p>State-of-the-art facilities with luxury amenities</p>
+                        <div class="destination-stats">
+                            <div class="stat">
+                                <span class="stat-number">10</span>
+                                <span class="stat-label">Hospitals</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-number">60%</span>
+                                <span class="stat-label">Savings</span>
+                            </div>
+                        </div>
+                        <a href="#middle-east" class="btn btn-outline-primary btn-sm">Explore</a>
+                    </div>
+                </div>
+                
+                <div class="col-lg-6 col-xl-3 mb-4" data-aos="fade-up" data-aos-delay="400">
+                    <div class="destination-overview-card" data-destination="africa">
+                        <div class="destination-flag">
+                            <i class="fas fa-flag"></i>
+                        </div>
+                        <h3>Africa</h3>
+                        <p>Quality healthcare with exceptional value</p>
+                        <div class="destination-stats">
+                            <div class="stat">
+                                <span class="stat-number">8</span>
+                                <span class="stat-label">Hospitals</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-number">70%</span>
+                                <span class="stat-label">Savings</span>
+                            </div>
+                        </div>
+                        <a href="#africa" class="btn btn-outline-primary btn-sm">Explore</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Europe Section -->
+    <section id="europe" class="py-5 bg-light">
+        <div class="container">
+            <div class="row justify-content-center mb-5">
+                <div class="col-lg-8 text-center" data-aos="fade-up">
+                    <h2 class="section-title">Europe</h2>
+                    <p class="section-subtitle">Leading medical centers combining advanced technology with decades of expertise</p>
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="col-lg-4 mb-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="destination-country-card">
+                        <div class="country-header">
+                            <img src="https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?w=400&h=200&fit=crop" alt="United Kingdom" class="country-image">
+                            <div class="country-overlay">
+                                <h3>United Kingdom</h3>
+                                <span class="country-badge">5 Partner Hospitals</span>
+                            </div>
+                        </div>
+                        <div class="country-content">
+                            <div class="specialties">
+                                <h5>Top Specialties</h5>
+                                <div class="specialty-tags">
+                                    <span class="specialty-tag">Cardiology</span>
+                                    <span class="specialty-tag">Oncology</span>
+                                    <span class="specialty-tag">Neurology</span>
+                                </div>
+                            </div>
+                            <div class="country-highlights">
+                                <ul>
+                                    <li><i class="fas fa-check text-success"></i> NHS-trained specialists</li>
+                                    <li><i class="fas fa-check text-success"></i> English-speaking environment</li>
+                                    <li><i class="fas fa-check text-success"></i> JCI accredited facilities</li>
+                                </ul>
+                            </div>
+                            <div class="cost-comparison">
+                                <span class="cost-label">Average Savings</span>
+                                <span class="cost-value">35-45%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 mb-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="destination-country-card">
+                        <div class="country-header">
+                            <img src="https://images.unsplash.com/photo-1467269204594-9661b134dd2b?w=400&h=200&fit=crop" alt="Germany" class="country-image">
+                            <div class="country-overlay">
+                                <h3>Germany</h3>
+                                <span class="country-badge">6 Partner Hospitals</span>
+                            </div>
+                        </div>
+                        <div class="country-content">
+                            <div class="specialties">
+                                <h5>Top Specialties</h5>
+                                <div class="specialty-tags">
+                                    <span class="specialty-tag">Orthopedics</span>
+                                    <span class="specialty-tag">Cardiac Surgery</span>
+                                    <span class="specialty-tag">Cancer Treatment</span>
+                                </div>
+                            </div>
+                            <div class="country-highlights">
+                                <ul>
+                                    <li><i class="fas fa-check text-success"></i> World-leading medical technology</li>
+                                    <li><i class="fas fa-check text-success"></i> Precision engineering approach</li>
+                                    <li><i class="fas fa-check text-success"></i> Excellent healthcare infrastructure</li>
+                                </ul>
+                            </div>
+                            <div class="cost-comparison">
+                                <span class="cost-label">Average Savings</span>
+                                <span class="cost-value">30-40%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 mb-4" data-aos="fade-up" data-aos-delay="300">
+                    <div class="destination-country-card">
+                        <div class="country-header">
+                            <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=400&h=200&fit=crop" alt="Switzerland" class="country-image">
+                            <div class="country-overlay">
+                                <h3>Switzerland</h3>
+                                <span class="country-badge">4 Partner Hospitals</span>
+                            </div>
+                        </div>
+                        <div class="country-content">
+                            <div class="specialties">
+                                <h5>Top Specialties</h5>
+                                <div class="specialty-tags">
+                                    <span class="specialty-tag">Plastic Surgery</span>
+                                    <span class="specialty-tag">Wellness</span>
+                                    <span class="specialty-tag">Rehabilitation</span>
+                                </div>
+                            </div>
+                            <div class="country-highlights">
+                                <ul>
+                                    <li><i class="fas fa-check text-success"></i> Premium healthcare quality</li>
+                                    <li><i class="fas fa-check text-success"></i> Alpine wellness environment</li>
+                                    <li><i class="fas fa-check text-success"></i> Multilingual medical staff</li>
+                                </ul>
+                            </div>
+                            <div class="cost-comparison">
+                                <span class="cost-label">Average Savings</span>
+                                <span class="cost-value">25-35%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- North America Section -->
+    <section id="north-america" class="py-5">
+        <div class="container">
+            <div class="row justify-content-center mb-5">
+                <div class="col-lg-8 text-center" data-aos="fade-up">
+                    <h2 class="section-title">North America</h2>
+                    <p class="section-subtitle">Access to world-renowned medical institutions and innovative treatments</p>
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="col-lg-6 mb-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="destination-country-card">
+                        <div class="country-header">
+                            <img src="https://images.unsplash.com/photo-1501594907352-04cda38ebc29?w=400&h=200&fit=crop" alt="United States" class="country-image">
+                            <div class="country-overlay">
+                                <h3>United States</h3>
+                                <span class="country-badge">8 Partner Hospitals</span>
+                            </div>
+                        </div>
+                        <div class="country-content">
+                            <div class="specialties">
+                                <h5>Top Specialties</h5>
+                                <div class="specialty-tags">
+                                    <span class="specialty-tag">Cancer Treatment</span>
+                                    <span class="specialty-tag">Neurosurgery</span>
+                                    <span class="specialty-tag">Organ Transplants</span>
+                                    <span class="specialty-tag">Pediatric Care</span>
+                                </div>
+                            </div>
+                            <div class="country-highlights">
+                                <ul>
+                                    <li><i class="fas fa-check text-success"></i> Leading cancer research centers</li>
+                                    <li><i class="fas fa-check text-success"></i> Innovative surgical techniques</li>
+                                    <li><i class="fas fa-check text-success"></i> FDA-approved latest treatments</li>
+                                    <li><i class="fas fa-check text-success"></i> World-class medical education</li>
+                                </ul>
+                            </div>
+                            <div class="featured-hospitals">
+                                <h6>Featured Partners</h6>
+                                <ul class="hospital-list">
+                                    <li>Mayo Clinic Network Affiliates</li>
+                                    <li>Johns Hopkins Partner Facilities</li>
+                                    <li>Cleveland Clinic Associates</li>
+                                </ul>
+                            </div>
+                            <div class="cost-comparison">
+                                <span class="cost-label">Average Savings</span>
+                                <span class="cost-value">20-30%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-6 mb-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="destination-country-card">
+                        <div class="country-header">
+                            <img src="https://images.unsplash.com/photo-1503614472-8c93d56cd601?w=400&h=200&fit=crop" alt="Canada" class="country-image">
+                            <div class="country-overlay">
+                                <h3>Canada</h3>
+                                <span class="country-badge">4 Partner Hospitals</span>
+                            </div>
+                        </div>
+                        <div class="country-content">
+                            <div class="specialties">
+                                <h5>Top Specialties</h5>
+                                <div class="specialty-tags">
+                                    <span class="specialty-tag">Fertility Treatment</span>
+                                    <span class="specialty-tag">Orthopedic Surgery</span>
+                                    <span class="specialty-tag">Mental Health</span>
+                                </div>
+                            </div>
+                            <div class="country-highlights">
+                                <ul>
+                                    <li><i class="fas fa-check text-success"></i> Universal healthcare standards</li>
+                                    <li><i class="fas fa-check text-success"></i> Bilingual medical services</li>
+                                    <li><i class="fas fa-check text-success"></i> Advanced fertility treatments</li>
+                                    <li><i class="fas fa-check text-success"></i> Patient-centered care approach</li>
+                                </ul>
+                            </div>
+                            <div class="featured-hospitals">
+                                <h6>Featured Partners</h6>
+                                <ul class="hospital-list">
+                                    <li>Toronto General Hospital Network</li>
+                                    <li>Vancouver Coastal Health</li>
+                                    <li>McGill University Health Centre</li>
+                                </ul>
+                            </div>
+                            <div class="cost-comparison">
+                                <span class="cost-label">Average Savings</span>
+                                <span class="cost-value">25-35%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Middle East Section -->
+    <section id="middle-east" class="py-5 bg-light">
+        <div class="container">
+            <div class="row justify-content-center mb-5">
+                <div class="col-lg-8 text-center" data-aos="fade-up">
+                    <h2 class="section-title">Middle East</h2>
+                    <p class="section-subtitle">Ultra-modern facilities with luxury amenities and world-class care</p>
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="col-lg-6 mb-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="destination-country-card">
+                        <div class="country-header">
+                            <img src="https://images.unsplash.com/photo-1512453979798-5ea266f8880c?w=400&h=200&fit=crop" alt="United Arab Emirates" class="country-image">
+                            <div class="country-overlay">
+                                <h3>United Arab Emirates</h3>
+                                <span class="country-badge">6 Partner Hospitals</span>
+                            </div>
+                        </div>
+                        <div class="country-content">
+                            <div class="specialties">
+                                <h5>Top Specialties</h5>
+                                <div class="specialty-tags">
+                                    <span class="specialty-tag">Cosmetic Surgery</span>
+                                    <span class="specialty-tag">Fertility Treatment</span>
+                                    <span class="specialty-tag">Minimally Invasive Surgery</span>
+                                    <span class="specialty-tag">Dental Implants</span>
+                                </div>
+                            </div>
+                            <div class="country-highlights">
+                                <ul>
+                                    <li><i class="fas fa-check text-success"></i> State-of-the-art medical facilities</li>
+                                    <li><i class="fas fa-check text-success"></i> Luxury hospitality standards</li>
+                                    <li><i class="fas fa-check text-success"></i> International medical staff</li>
+                                    <li><i class="fas fa-check text-success"></i> Tax-free medical tourism</li>
+                                </ul>
+                            </div>
+                            <div class="featured-hospitals">
+                                <h6>Featured Partners</h6>
+                                <ul class="hospital-list">
+                                    <li>American Hospital Dubai</li>
+                                    <li>Cleveland Clinic Abu Dhabi</li>
+                                    <li>Mediclinic City Hospital</li>
+                                </ul>
+                            </div>
+                            <div class="cost-comparison">
+                                <span class="cost-label">Average Savings</span>
+                                <span class="cost-value">50-65%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-6 mb-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="destination-country-card">
+                        <div class="country-header">
+                            <img src="https://images.unsplash.com/photo-1539650116574-75c0c6d73c0e?w=400&h=200&fit=crop" alt="Jordan" class="country-image">
+                            <div class="country-overlay">
+                                <h3>Jordan</h3>
+                                <span class="country-badge">4 Partner Hospitals</span>
+                            </div>
+                        </div>
+                        <div class="country-content">
+                            <div class="specialties">
+                                <h5>Top Specialties</h5>
+                                <div class="specialty-tags">
+                                    <span class="specialty-tag">Cardiac Surgery</span>
+                                    <span class="specialty-tag">Oncology</span>
+                                    <span class="specialty-tag">Organ Transplants</span>
+                                </div>
+                            </div>
+                            <div class="country-highlights">
+                                <ul>
+                                    <li><i class="fas fa-check text-success"></i> Regional medical hub</li>
+                                    <li><i class="fas fa-check text-success"></i> Experienced medical professionals</li>
+                                    <li><i class="fas fa-check text-success"></i> Cultural hospitality</li>
+                                    <li><i class="fas fa-check text-success"></i> Affordable premium care</li>
+                                </ul>
+                            </div>
+                            <div class="featured-hospitals">
+                                <h6>Featured Partners</h6>
+                                <ul class="hospital-list">
+                                    <li>King Hussein Cancer Center</li>
+                                    <li>Jordan Hospital & Medical Center</li>
+                                    <li>Arab Medical Center</li>
+                                </ul>
+                            </div>
+                            <div class="cost-comparison">
+                                <span class="cost-label">Average Savings</span>
+                                <span class="cost-value">60-70%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Africa Section -->
+    <section id="africa" class="py-5">
+        <div class="container">
+            <div class="row justify-content-center mb-5">
+                <div class="col-lg-8 text-center" data-aos="fade-up">
+                    <h2 class="section-title">Africa</h2>
+                    <p class="section-subtitle">Quality healthcare with exceptional value and personalized attention</p>
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="col-lg-6 mb-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="destination-country-card">
+                        <div class="country-header">
+                            <img src="https://images.unsplash.com/photo-1484318571269-e51ef7a96a1c?w=400&h=200&fit=crop" alt="South Africa" class="country-image">
+                            <div class="country-overlay">
+                                <h3>South Africa</h3>
+                                <span class="country-badge">5 Partner Hospitals</span>
+                            </div>
+                        </div>
+                        <div class="country-content">
+                            <div class="specialties">
+                                <h5>Top Specialties</h5>
+                                <div class="specialty-tags">
+                                    <span class="specialty-tag">General Surgery</span>
+                                    <span class="specialty-tag">Dental Care</span>
+                                    <span class="specialty-tag">Wellness Programs</span>
+                                    <span class="specialty-tag">Rehabilitation</span>
+                                </div>
+                            </div>
+                            <div class="country-highlights">
+                                <ul>
+                                    <li><i class="fas fa-check text-success"></i> First-world medical standards</li>
+                                    <li><i class="fas fa-check text-success"></i> English-speaking medical staff</li>
+                                    <li><i class="fas fa-check text-success"></i> Beautiful recovery environment</li>
+                                    <li><i class="fas fa-check text-success"></i> Exceptional value for money</li>
+                                </ul>
+                            </div>
+                            <div class="featured-hospitals">
+                                <h6>Featured Partners</h6>
+                                <ul class="hospital-list">
+                                    <li>Netcare Hospitals Group</li>
+                                    <li>Life Healthcare</li>
+                                    <li>Mediclinic Southern Africa</li>
+                                </ul>
+                            </div>
+                            <div class="cost-comparison">
+                                <span class="cost-label">Average Savings</span>
+                                <span class="cost-value">65-75%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-6 mb-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="destination-country-card">
+                        <div class="country-header">
+                            <img src="https://images.unsplash.com/photo-1539037116277-4db20889f2d4?w=400&h=200&fit=crop" alt="Morocco" class="country-image">
+                            <div class="country-overlay">
+                                <h3>Morocco</h3>
+                                <span class="country-badge">3 Partner Hospitals</span>
+                            </div>
+                        </div>
+                        <div class="country-content">
+                            <div class="specialties">
+                                <h5>Top Specialties</h5>
+                                <div class="specialty-tags">
+                                    <span class="specialty-tag">Cosmetic Surgery</span>
+                                    <span class="specialty-tag">Dental Tourism</span>
+                                    <span class="specialty-tag">Wellness Retreats</span>
+                                </div>
+                            </div>
+                            <div class="country-highlights">
+                                <ul>
+                                    <li><i class="fas fa-check text-success"></i> French medical education standards</li>
+                                    <li><i class="fas fa-check text-success"></i> Multicultural medical environment</li>
+                                    <li><i class="fas fa-check text-success"></i> Exotic recovery destinations</li>
+                                    <li><i class="fas fa-check text-success"></i> Competitive pricing</li>
+                                </ul>
+                            </div>
+                            <div class="featured-hospitals">
+                                <h6>Featured Partners</h6>
+                                <ul class="hospital-list">
+                                    <li>Clinique Internationale Casablanca</li>
+                                    <li>Hopital Cheikh Zaid</li>
+                                    <li>Centre Hospitalier Universitaire</li>
+                                </ul>
+                            </div>
+                            <div class="cost-comparison">
+                                <span class="cost-label">Average Savings</span>
+                                <span class="cost-value">70-80%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Treatment Cost Comparison 
+    <section class="py-5 bg-primary text-white">
+        <div class="container">
+            <div class="row justify-content-center mb-5">
+                <div class="col-lg-8 text-center" data-aos="fade-up">
+                    <h2 class="section-title text-white">Treatment Cost Comparison</h2>
+                    <p class="section-subtitle">See how much you can save with Go4Health Global</p>
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="cost-comparison-table">
+                        <div class="table-responsive">
+                            <table class="table table-dark table-striped">
+                                <thead>
+                                    <tr>
+                                        <th>Treatment</th>
+                                        <th>US/UK Price</th>
+                                        <th>Europe</th>
+                                        <th>Middle East</th>
+                                        <th>Africa</th>
+                                        <th>Max Savings</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td><strong>Heart Bypass Surgery</strong></td>
+                                        <td>$120,000</td>
+                                        <td>$75,000</td>
+                                        <td>$45,000</td>
+                                        <td>$35,000</td>
+                                        <td class="savings">71%</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Hip Replacement</strong></td>
+                                        <td>$50,000</td>
+                                        <td>$35,000</td>
+                                        <td>$20,000</td>
+                                        <td>$15,000</td>
+                                        <td class="savings">70%</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>IVF Treatment</strong></td>
+                                        <td>$15,000</td>
+                                        <td>$10,000</td>
+                                        <td>$6,000</td>
+                                        <td>$4,500</td>
+                                        <td class="savings">70%</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Dental Implants (Full Set)</strong></td>
+                                        <td>$30,000</td>
+                                        <td>$20,000</td>
+                                        <td>$12,000</td>
+                                        <td>$8,000</td>
+                                        <td class="savings">73%</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Cosmetic Surgery</strong></td>
+                                        <td>$25,000</td>
+                                        <td>$18,000</td>
+                                        <td>$10,000</td>
+                                        <td>$7,500</td>
+                                        <td class="savings">70%</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="text-center mt-4">
+                            <p class="text-light"><em>*Prices are approximate and may vary based on specific treatment requirements and hospital selection</em></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> -->
+
+    <!-- How to Choose Section -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row justify-content-center mb-5">
+                <div class="col-lg-8 text-center" data-aos="fade-up">
+                    <h2 class="section-title">How to Choose Your Destination</h2>
+                    <p class="section-subtitle">We help you select the perfect destination based on your specific needs</p>
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="col-lg-3 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="choice-factor">
+                        <div class="factor-icon">
+                            <i class="fas fa-user-md"></i>
+                        </div>
+                        <h4>Medical Expertise</h4>
+                        <p>We match you with destinations that specialize in your specific treatment requirements</p>
+                    </div>
+                </div>
+                
+                <div class="col-lg-3 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="choice-factor">
+                        <div class="factor-icon">
+                            <i class="fas fa-dollar-sign"></i>
+                        </div>
+                        <h4>Budget Considerations</h4>
+                        <p>Find the best value for your budget without compromising on quality of care</p>
+                    </div>
+                </div>
+                
+                <div class="col-lg-3 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="300">
+                    <div class="choice-factor">
+                        <div class="factor-icon">
+                            <i class="fas fa-plane"></i>
+                        </div>
+                        <h4>Travel Preferences</h4>
+                        <p>Consider travel distance, visa requirements, and cultural preferences</p>
+                    </div>
+                </div>
+                
+                <div class="col-lg-3 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="400">
+                    <div class="choice-factor">
+                        <div class="factor-icon">
+                            <i class="fas fa-calendar-alt"></i>
+                        </div>
+                        <h4>Timing & Recovery</h4>
+                        <p>Plan your treatment timeline and recovery period in your chosen destination</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action Section -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 text-center" data-aos="fade-up">
+                    <h2 class="section-title">Ready to Explore Your Options?</h2>
+                    <p class="section-subtitle">Get personalized destination recommendations based on your medical needs and preferences</p>
+                    <div class="cta-buttons">
+                        <a href="#consultation" class="btn btn-primary btn-lg me-3">Free Consultation</a>
+                        <a href="contact.html" class="btn btn-outline-primary btn-lg">Contact Us</a>
+                    </div>
+                    <div class="cta-contact-info mt-4">
+                        <p class="text-muted">Speak with our destination specialists: <strong>+44 77 7102 0403</strong></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer bg-dark text-white py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-4">
+                    <img src="images/logo.svg" alt="Go4Health Global" height="60" class="mb-3">
+                    <p>Connecting international patients with world-class healthcare across four continents. Your health, our global network.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <h5>Quick Links</h5>
+                    <ul class="footer-links">
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="destinations.html">Destinations</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <h5>Services</h5>
+                    <ul class="footer-links">
+                        <li><a href="services.html">Medical Tourism</a></li>
+                        <li><a href="services.html">Second Opinions</a></li>
+                        <li><a href="services.html">Travel Coordination</a></li>
+                        <li><a href="services.html">Post-Care Support</a></li>
+                    </ul>
+                </div>
+                
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <h5>Resources</h5>
+                    <ul class="footer-links">
+                        <li><a href="blog.html">Blog & News</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                        <li><a href="patient-stories.html">Patient Stories</a></li>
+                        <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <h5>Support</h5>
+                    <ul class="footer-links">
+                        <li><a href="contact.html">Help Center</a></li>
+                        <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                        <li><a href="terms-of-service.html">Terms of Service</a></li>
+                        <li><a href="contact.html">Emergency</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <hr class="my-4">
+            
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <p class="mb-0">&copy; 2024 Go4Health Global. All rights reserved.</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <p class="mb-0">Headquartered in London | Global Healthcare Network</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- AOS JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,705 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services - Go4Health Global | Comprehensive Medical Tourism Services</title>
+    <meta name="description" content="Discover our comprehensive medical tourism services including medical consultation, travel coordination, post-care support, and more. Your complete healthcare journey partner.">
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- AOS (Animate On Scroll) -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top custom-navbar">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="images/logo.svg" alt="Go4Health Global" height="50">
+            </a>
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="aboutDropdown" role="button" data-bs-toggle="dropdown">
+                            About
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="about.html">About Us</a></li>
+                            <li><a class="dropdown-item" href="about.html#team">Our Team</a></li>
+                            <li><a class="dropdown-item" href="about.html#accreditations">Accreditations</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle active" href="#" id="servicesDropdown" role="button" data-bs-toggle="dropdown">
+                            Services
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="services.html">All Services</a></li>
+                            <li><a class="dropdown-item" href="services.html#medical-consultation">Medical Consultation</a></li>
+                            <li><a class="dropdown-item" href="services.html#travel-coordination">Travel Coordination</a></li>
+                            <li><a class="dropdown-item" href="services.html#post-care">Post-Care Support</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="destinations.html">Destinations</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="resourcesDropdown" role="button" data-bs-toggle="dropdown">
+                            Resources
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="blog.html">Blog & News</a></li>
+                            <li><a class="dropdown-item" href="faq.html">FAQ</a></li>
+                            <li><a class="dropdown-item" href="patient-stories.html">Patient Stories</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="btn btn-primary ms-2" href="#consultation">Free Consultation</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section-small">
+        <div class="hero-overlay"></div>
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-12 text-center" data-aos="fade-up">
+                    <h1 class="hero-title">Our Services</h1>
+                    <p class="hero-subtitle">Comprehensive Medical Tourism Solutions Tailored to Your Needs</p>
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb justify-content-center">
+                            <li class="breadcrumb-item"><a href="index.html" class="text-white">Home</a></li>
+                            <li class="breadcrumb-item active text-white" aria-current="page">Services</li>
+                        </ol>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Overview -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row justify-content-center mb-5">
+                <div class="col-lg-8 text-center" data-aos="fade-up">
+                    <h2 class="section-title">Complete Healthcare Journey Support</h2>
+                    <p class="section-subtitle">From initial consultation to post-treatment care, we're with you every step of the way</p>
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="service-card-detailed">
+                        <div class="service-icon">
+                            <i class="fas fa-user-md"></i>
+                        </div>
+                        <h4>Medical Consultation</h4>
+                        <p>Expert medical opinions and treatment planning from world-renowned specialists.</p>
+                        <ul class="service-features">
+                            <li>Virtual consultations with specialists</li>
+                            <li>Medical record reviews</li>
+                            <li>Second opinion services</li>
+                            <li>Treatment recommendations</li>
+                        </ul>
+                        <div class="service-price">
+                            <span class="price-label">Starting from</span>
+                            <span class="price">$199</span>
+                        </div>
+                        <a href="#consultation" class="btn btn-outline-primary btn-sm">Learn More</a>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="service-card-detailed">
+                        <div class="service-icon">
+                            <i class="fas fa-plane"></i>
+                        </div>
+                        <h4>Travel Coordination</h4>
+                        <p>Complete travel arrangements including visa assistance and accommodation booking.</p>
+                        <ul class="service-features">
+                            <li>Visa support and documentation</li>
+                            <li>Flight bookings and transfers</li>
+                            <li>Medical accommodation</li>
+                            <li>Local transportation</li>
+                        </ul>
+                        <div class="service-price">
+                            <span class="price-label">Package deals from</span>
+                            <span class="price">$399</span>
+                        </div>
+                        <a href="#consultation" class="btn btn-outline-primary btn-sm">Learn More</a>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="300">
+                    <div class="service-card-detailed">
+                        <div class="service-icon">
+                            <i class="fas fa-hospital"></i>
+                        </div>
+                        <h4>Hospital Partnerships</h4>
+                        <p>Access to premier healthcare facilities with international accreditation worldwide.</p>
+                        <ul class="service-features">
+                            <li>JCI accredited hospitals</li>
+                            <li>Board-certified physicians</li>
+                            <li>Advanced medical technology</li>
+                            <li>International standards</li>
+                        </ul>
+                        <div class="service-price">
+                            <span class="price-label">Savings up to</span>
+                            <span class="price">70%</span>
+                        </div>
+                        <a href="#consultation" class="btn btn-outline-primary btn-sm">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Detailed Services Section -->
+    <section id="medical-consultation" class="py-5 bg-light">
+        <div class="container">
+            <div class="row align-items-center mb-5">
+                <div class="col-lg-6" data-aos="fade-right">
+                    <div class="service-detail-image">
+                        <img src="images/image1.jpg" alt="Medical Consultation" class="img-fluid rounded-3 shadow">
+                    </div>
+                </div>
+                <div class="col-lg-6" data-aos="fade-left">
+                    <div class="service-detail-content">
+                        <h2>Medical Consultation & Second Opinions</h2>
+                        <p class="lead">Connect with leading medical specialists worldwide for expert opinions and treatment planning without leaving your home.</p>
+                        
+                        <div class="feature-grid">
+                            <div class="feature-item">
+                                <i class="fas fa-video text-primary"></i>
+                                <div>
+                                    <h5>Virtual Consultations</h5>
+                                    <p>Secure video consultations with specialists in over 50 medical specialties</p>
+                                </div>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-file-medical text-primary"></i>
+                                <div>
+                                    <h5>Medical Record Review</h5>
+                                    <p>Comprehensive analysis of your medical history and diagnostic reports</p>
+                                </div>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-clipboard-list text-primary"></i>
+                                <div>
+                                    <h5>Treatment Planning</h5>
+                                    <p>Detailed treatment recommendations and care pathway development</p>
+                                </div>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-clock text-primary"></i>
+                                <div>
+                                    <h5>24-48 Hour Response</h5>
+                                    <p>Fast-track consultations for urgent medical conditions</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="pricing-info">
+                            <h4>Consultation Pricing</h4>
+                            <div class="price-list">
+                                <div class="price-item">
+                                    <span>General Consultation</span>
+                                    <span class="price">$199</span>
+                                </div>
+                                <div class="price-item">
+                                    <span>Specialist Consultation</span>
+                                    <span class="price">$299</span>
+                                </div>
+                                <div class="price-item">
+                                    <span>Complex Case Review</span>
+                                    <span class="price">$399</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Travel Coordination Section -->
+    <section id="travel-coordination" class="py-5">
+        <div class="container">
+            <div class="row align-items-center mb-5">
+                <div class="col-lg-6 order-lg-2" data-aos="fade-left">
+                    <div class="service-detail-image">
+                        <img src="images/image2.jpg" alt="Travel Coordination" class="img-fluid rounded-3 shadow">
+                    </div>
+                </div>
+                <div class="col-lg-6 order-lg-1" data-aos="fade-right">
+                    <div class="service-detail-content">
+                        <h2>Complete Travel Coordination</h2>
+                        <p class="lead">Leave the logistics to us. We handle every aspect of your medical travel from visa processing to local transportation.</p>
+                        
+                        <div class="service-process">
+                            <h4>Our Process</h4>
+                            <div class="process-steps">
+                                <div class="process-step">
+                                    <div class="step-number">1</div>
+                                    <div class="step-content">
+                                        <h5>Visa & Documentation</h5>
+                                        <p>Complete visa application support and medical travel documentation</p>
+                                    </div>
+                                </div>
+                                <div class="process-step">
+                                    <div class="step-number">2</div>
+                                    <div class="step-content">
+                                        <h5>Flight & Accommodation</h5>
+                                        <p>Best-rate flight bookings and medical-friendly accommodation</p>
+                                    </div>
+                                </div>
+                                <div class="process-step">
+                                    <div class="step-number">3</div>
+                                    <div class="step-content">
+                                        <h5>Local Support</h5>
+                                        <p>Airport transfers, local transportation, and companion services</p>
+                                    </div>
+                                </div>
+                                <div class="process-step">
+                                    <div class="step-number">4</div>
+                                    <div class="step-content">
+                                        <h5>24/7 Assistance</h5>
+                                        <p>Round-the-clock support during your entire medical journey</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="included-services">
+                            <h4>What's Included</h4>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <ul class="included-list">
+                                        <li><i class="fas fa-check text-success"></i> Visa application assistance</li>
+                                        <li><i class="fas fa-check text-success"></i> Flight booking & management</li>
+                                        <li><i class="fas fa-check text-success"></i> Airport transfers</li>
+                                        <li><i class="fas fa-check text-success"></i> Medical accommodation</li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-6">
+                                    <ul class="included-list">
+                                        <li><i class="fas fa-check text-success"></i> Local transportation</li>
+                                        <li><i class="fas fa-check text-success"></i> Translation services</li>
+                                        <li><i class="fas fa-check text-success"></i> Emergency support</li>
+                                        <li><i class="fas fa-check text-success"></i> Companion coordination</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Medical Specialties Section -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="row justify-content-center mb-5">
+                <div class="col-lg-8 text-center" data-aos="fade-up">
+                    <h2 class="section-title">Medical Specialties We Cover</h2>
+                    <p class="section-subtitle">Access to world-class specialists across all major medical fields</p>
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="col-lg-3 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="specialty-card">
+                        <div class="specialty-icon">
+                            <i class="fas fa-heartbeat"></i>
+                        </div>
+                        <h5>Cardiology</h5>
+                        <p>Heart surgery, bypass, valve replacement, arrhythmia treatment</p>
+                        <div class="specialty-stats">
+                            <span>500+ procedures</span>
+                            <span>98% success rate</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-3 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="specialty-card">
+                        <div class="specialty-icon">
+                            <i class="fas fa-brain"></i>
+                        </div>
+                        <h5>Oncology</h5>
+                        <p>Cancer treatment, chemotherapy, radiation, immunotherapy</p>
+                        <div class="specialty-stats">
+                            <span>800+ cases</span>
+                            <span>95% patient satisfaction</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-3 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="300">
+                    <div class="specialty-card">
+                        <div class="specialty-icon">
+                            <i class="fas fa-bone"></i>
+                        </div>
+                        <h5>Orthopedics</h5>
+                        <p>Joint replacement, spine surgery, sports medicine</p>
+                        <div class="specialty-stats">
+                            <span>1200+ surgeries</span>
+                            <span>97% mobility improvement</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-3 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="400">
+                    <div class="specialty-card">
+                        <div class="specialty-icon">
+                            <i class="fas fa-eye"></i>
+                        </div>
+                        <h5>Ophthalmology</h5>
+                        <p>LASIK, cataract surgery, retinal treatments</p>
+                        <div class="specialty-stats">
+                            <span>2000+ procedures</span>
+                            <span>99% vision improvement</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-3 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="500">
+                    <div class="specialty-card">
+                        <div class="specialty-icon">
+                            <i class="fas fa-baby"></i>
+                        </div>
+                        <h5>Fertility</h5>
+                        <p>IVF, egg freezing, fertility preservation</p>
+                        <div class="specialty-stats">
+                            <span>1500+ cycles</span>
+                            <span>65% success rate</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-3 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="600">
+                    <div class="specialty-card">
+                        <div class="specialty-icon">
+                            <i class="fas fa-cut"></i>
+                        </div>
+                        <h5>Cosmetic Surgery</h5>
+                        <p>Plastic surgery, aesthetic procedures, reconstructive surgery</p>
+                        <div class="specialty-stats">
+                            <span>3000+ procedures</span>
+                            <span>96% patient satisfaction</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-3 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="700">
+                    <div class="specialty-card">
+                        <div class="specialty-icon">
+                            <i class="fas fa-tooth"></i>
+                        </div>
+                        <h5>Dental Care</h5>
+                        <p>Implants, orthodontics, cosmetic dentistry</p>
+                        <div class="specialty-stats">
+                            <span>5000+ procedures</span>
+                            <span>98% patient satisfaction</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-3 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="800">
+                    <div class="specialty-card">
+                        <div class="specialty-icon">
+                            <i class="fas fa-lungs"></i>
+                        </div>
+                        <h5>Pulmonology</h5>
+                        <p>Lung surgery, respiratory treatments, sleep medicine</p>
+                        <div class="specialty-stats">
+                            <span>400+ procedures</span>
+                            <span>94% improvement rate</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Post-Care Support Section -->
+    <section id="post-care" class="py-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6" data-aos="fade-right">
+                    <div class="service-detail-image">
+                        <img src="images/image4.jpg" alt="Post-Care Support" class="img-fluid rounded-3 shadow">
+                    </div>
+                </div>
+                <div class="col-lg-6" data-aos="fade-left">
+                    <div class="service-detail-content">
+                        <h2>Post-Treatment Care & Follow-up</h2>
+                        <p class="lead">Our care doesn't end when your treatment does. We provide comprehensive post-treatment support for optimal recovery.</p>
+                        
+                        <div class="support-timeline">
+                            <h4>Recovery Support Timeline</h4>
+                            <div class="timeline">
+                                <div class="timeline-item">
+                                    <div class="timeline-marker">1W</div>
+                                    <div class="timeline-content">
+                                        <h5>Week 1: Immediate Post-Op</h5>
+                                        <p>Daily check-ins, wound care guidance, pain management support</p>
+                                    </div>
+                                </div>
+                                <div class="timeline-item">
+                                    <div class="timeline-marker">1M</div>
+                                    <div class="timeline-content">
+                                        <h5>Month 1: Recovery Monitoring</h5>
+                                        <p>Weekly virtual consultations, physical therapy coordination</p>
+                                    </div>
+                                </div>
+                                <div class="timeline-item">
+                                    <div class="timeline-marker">3M</div>
+                                    <div class="timeline-content">
+                                        <h5>Month 3: Progress Assessment</h5>
+                                        <p>Comprehensive review, lab work coordination, specialist follow-up</p>
+                                    </div>
+                                </div>
+                                <div class="timeline-item">
+                                    <div class="timeline-marker">1Y</div>
+                                    <div class="timeline-content">
+                                        <h5>Year 1: Long-term Care</h5>
+                                        <p>Annual check-ups, preventive care planning, lifestyle guidance</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="support-features">
+                            <h4>What We Provide</h4>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <ul class="support-list">
+                                        <li><i class="fas fa-phone text-success"></i> 24/7 medical hotline</li>
+                                        <li><i class="fas fa-video text-success"></i> Virtual follow-up appointments</li>
+                                        <li><i class="fas fa-file-medical text-success"></i> Medical record coordination</li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-6">
+                                    <ul class="support-list">
+                                        <li><i class="fas fa-ambulance text-success"></i> Emergency support</li>
+                                        <li><i class="fas fa-pills text-success"></i> Medication management</li>
+                                        <li><i class="fas fa-running text-success"></i> Rehabilitation coordination</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section class="py-5 bg-primary text-white">
+        <div class="container">
+            <div class="row justify-content-center mb-5">
+                <div class="col-lg-8 text-center" data-aos="fade-up">
+                    <h2 class="section-title text-white">Service Packages</h2>
+                    <p class="section-subtitle">Choose the package that best fits your needs</p>
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="col-lg-4 mb-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="pricing-card">
+                        <div class="pricing-header">
+                            <h3>Essential</h3>
+                            <div class="price">
+                                <span class="currency">$</span>
+                                <span class="amount">599</span>
+                                <span class="period">/consultation</span>
+                            </div>
+                        </div>
+                        <div class="pricing-features">
+                            <ul>
+                                <li><i class="fas fa-check"></i> Medical consultation</li>
+                                <li><i class="fas fa-check"></i> Treatment planning</li>
+                                <li><i class="fas fa-check"></i> Hospital coordination</li>
+                                <li><i class="fas fa-check"></i> Basic travel support</li>
+                                <li><i class="fas fa-times"></i> Post-treatment care</li>
+                                <li><i class="fas fa-times"></i> 24/7 support</li>
+                            </ul>
+                        </div>
+                        <a href="#consultation" class="btn btn-outline-light btn-block">Get Started</a>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 mb-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="pricing-card featured">
+                        <div class="pricing-badge">Most Popular</div>
+                        <div class="pricing-header">
+                            <h3>Complete</h3>
+                            <div class="price">
+                                <span class="currency">$</span>
+                                <span class="amount">1,299</span>
+                                <span class="period">/package</span>
+                            </div>
+                        </div>
+                        <div class="pricing-features">
+                            <ul>
+                                <li><i class="fas fa-check"></i> Everything in Essential</li>
+                                <li><i class="fas fa-check"></i> Complete travel coordination</li>
+                                <li><i class="fas fa-check"></i> Accommodation booking</li>
+                                <li><i class="fas fa-check"></i> Local support services</li>
+                                <li><i class="fas fa-check"></i> 3-month post-care</li>
+                                <li><i class="fas fa-check"></i> 24/7 support</li>
+                            </ul>
+                        </div>
+                        <a href="#consultation" class="btn btn-light btn-block">Get Started</a>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 mb-4" data-aos="fade-up" data-aos-delay="300">
+                    <div class="pricing-card">
+                        <div class="pricing-header">
+                            <h3>Premium</h3>
+                            <div class="price">
+                                <span class="currency">$</span>
+                                <span class="amount">2,499</span>
+                                <span class="period">/package</span>
+                            </div>
+                        </div>
+                        <div class="pricing-features">
+                            <ul>
+                                <li><i class="fas fa-check"></i> Everything in Complete</li>
+                                <li><i class="fas fa-check"></i> VIP hospital services</li>
+                                <li><i class="fas fa-check"></i> Luxury accommodation</li>
+                                <li><i class="fas fa-check"></i> Personal care coordinator</li>
+                                <li><i class="fas fa-check"></i> 1-year post-care</li>
+                                <li><i class="fas fa-check"></i> Concierge services</li>
+                            </ul>
+                        </div>
+                        <a href="#consultation" class="btn btn-outline-light btn-block">Get Started</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action Section -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 text-center" data-aos="fade-up">
+                    <h2 class="section-title">Ready to Begin Your Healthcare Journey?</h2>
+                    <p class="section-subtitle">Get a free consultation to discuss your specific medical needs and treatment options</p>
+                    <div class="cta-buttons">
+                        <a href="#consultation" class="btn btn-primary btn-lg me-3">Free Consultation</a>
+                        <a href="contact.html" class="btn btn-outline-primary btn-lg">Contact Us</a>
+                    </div>
+                    <div class="cta-contact-info mt-4">
+                        <p class="text-muted">Or call us directly at <strong>+44 20 7123 4567</strong> for immediate assistance</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer bg-dark text-white py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-4">
+                    <img src="images/logo.svg" alt="Go4Health Global" height="60" class="mb-3">
+                    <p>Connecting international patients with world-class healthcare across four continents. Your health, our global network.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <h5>Quick Links</h5>
+                    <ul class="footer-links">
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="destinations.html">Destinations</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <h5>Services</h5>
+                    <ul class="footer-links">
+                        <li><a href="services.html">Medical Tourism</a></li>
+                        <li><a href="services.html">Second Opinions</a></li>
+                        <li><a href="services.html">Travel Coordination</a></li>
+                        <li><a href="services.html">Post-Care Support</a></li>
+                    </ul>
+                </div>
+                
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <h5>Resources</h5>
+                    <ul class="footer-links">
+                        <li><a href="blog.html">Blog & News</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                        <li><a href="patient-stories.html">Patient Stories</a></li>
+                        <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <h5>Support</h5>
+                    <ul class="footer-links">
+                        <li><a href="contact.html">Help Center</a></li>
+                        <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                        <li><a href="terms-of-service.html">Terms of Service</a></li>
+                        <li><a href="contact.html">Emergency</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <hr class="my-4">
+            
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <p class="mb-0">&copy; 2024 Go4Health Global. All rights reserved.</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <p class="mb-0">Headquartered in London | Global Healthcare Network</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- AOS JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+</body>
+</html>

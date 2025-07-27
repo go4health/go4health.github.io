@@ -1,0 +1,789 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Go4Health Global - International Medical Tourism</title>
+    <meta name="description" content="Go4Health Global connects international patients with affordable, high-quality medical treatments across Africa, North America, Europe, and the Middle East.">
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- AOS (Animate On Scroll) -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top custom-navbar">
+        <div class="container">
+            <a class="navbar-brand" href="#home">
+                <img src="images/logo.svg" alt="Go4Health Global" height="50">
+            </a>
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="aboutDropdown" role="button" data-bs-toggle="dropdown">
+                            About
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="about.html">About Us</a></li>
+                            <li><a class="dropdown-item" href="about.html#team">Our Team</a></li>
+                            <li><a class="dropdown-item" href="about.html#accreditations">Accreditations</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="servicesDropdown" role="button" data-bs-toggle="dropdown">
+                            Services
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="services.html">All Services</a></li>
+                            <li><a class="dropdown-item" href="services.html#medical-consultation">Medical Consultation</a></li>
+                            <li><a class="dropdown-item" href="services.html#travel-coordination">Travel Coordination</a></li>
+                            <li><a class="dropdown-item" href="services.html#post-care">Post-Care Support</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="destinations.html">Destinations</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="resourcesDropdown" role="button" data-bs-toggle="dropdown">
+                            Resources
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="blog.html">Blog & News</a></li>
+                            <li><a class="dropdown-item" href="faq.html">FAQ</a></li>
+                            <li><a class="dropdown-item" href="patient-stories.html">Patient Stories</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="btn btn-primary ms-2" href="#consultation">Free Consultation</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <div class="hero-overlay"></div>
+        <div class="container">
+            <div class="row align-items-center min-vh-100">
+                <div class="col-lg-6" data-aos="fade-right">
+                    <h1 class="hero-title">Your Journey to <span class="text-gradient">World-Class Healthcare</span> Starts Here</h1>
+                    <p class="hero-subtitle">Connect with affordable, high-quality medical treatments across Africa, North America, Europe, and the Middle East. Your health, our global network.</p>
+                    <div class="hero-buttons">
+                        <a href="#consultation" class="btn btn-primary btn-lg me-3">Start Your Journey</a>
+                        <a href="#about" class="btn btn-outline-light btn-lg">Learn More</a>
+                    </div>
+                    <div class="hero-stats mt-4">
+                        <div class="row">
+                            <div class="col-4">
+                                <div class="stat-item">
+                                    <h3>50+</h3>
+                                    <span>Partner Hospitals</span>
+                                </div>
+                            </div>
+                            <div class="col-4">
+                                <div class="stat-item">
+                                    <h3>4</h3>
+                                    <span>Continents</span>
+                                </div>
+                            </div>
+                            <div class="col-4">
+                                <div class="stat-item">
+                                    <h3>10K+</h3>
+                                    <span>Happy Patients</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6" data-aos="fade-left">
+                    <div class="hero-image">
+                        <img src="images/image3.jpg" alt="Global Healthcare" class="img-fluid rounded-3 shadow-lg">
+                        <div class="floating-card" data-aos="fade-up" data-aos-delay="200">
+                            <i class="fas fa-globe-americas"></i>
+                            <h4>Global Network</h4>
+                            <p>Connected healthcare worldwide</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <a href="#about">
+                <i class="fas fa-chevron-down"></i>
+            </a>
+        </div>
+    </section>
+
+    <!-- Trust & Certifications Section -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="row justify-content-center mb-4">
+                <div class="col-lg-8 text-center" data-aos="fade-up">
+                    <h3 class="mb-4">Trusted by Patients Worldwide</h3>
+                    <p class="text-muted">Accredited by leading healthcare organizations and trusted by thousands of patients</p>
+                </div>
+            </div>
+            <div class="row align-items-center justify-content-center">
+                <div class="col-lg-2 col-md-3 col-6 mb-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="certification-badge text-center">
+                        <i class="fas fa-certificate text-primary mb-2" style="font-size: 2.5rem;"></i>
+                        <h6>JCI Accredited</h6>
+                        <small class="text-muted">Joint Commission International</small>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-3 col-6 mb-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="certification-badge text-center">
+                        <i class="fas fa-shield-alt text-success mb-2" style="font-size: 2.5rem;"></i>
+                        <h6>ISO 9001</h6>
+                        <small class="text-muted">Quality Management</small>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-3 col-6 mb-4" data-aos="fade-up" data-aos-delay="300">
+                    <div class="certification-badge text-center">
+                        <i class="fas fa-user-md text-info mb-2" style="font-size: 2.5rem;"></i>
+                        <h6>AAAHC Certified</h6>
+                        <small class="text-muted">Ambulatory Health Care</small>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-3 col-6 mb-4" data-aos="fade-up" data-aos-delay="400">
+                    <div class="certification-badge text-center">
+                        <i class="fas fa-lock text-warning mb-2" style="font-size: 2.5rem;"></i>
+                        <h6>HIPAA Compliant</h6>
+                        <small class="text-muted">Data Protection</small>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-3 col-6 mb-4" data-aos="fade-up" data-aos-delay="500">
+                    <div class="certification-badge text-center">
+                        <i class="fas fa-globe text-primary mb-2" style="font-size: 2.5rem;"></i>
+                        <h6>MTQUA Member</h6>
+                        <small class="text-muted">Medical Tourism Quality</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-5">
+        <div class="container">
+            <div class="row justify-content-center mb-5">
+                <div class="col-lg-8 text-center" data-aos="fade-up">
+                    <h2 class="section-title">About Go4Health Global</h2>
+                    <p class="section-subtitle">Headquartered in London, we bridge the gap between patients seeking quality healthcare and world-class medical facilities across four continents.</p>
+                </div>
+            </div>
+            
+            <div class="row align-items-center mb-5">
+                <div class="col-lg-6" data-aos="fade-right">
+                    <img src="images/image5.jpg" alt="Modern Hospital Lobby" class="img-fluid rounded-3 shadow">
+                </div>
+                <div class="col-lg-6" data-aos="fade-left">
+                    <div class="about-content">
+                        <h3>Our Mission</h3>
+                        <p>To make world-class healthcare accessible to everyone by connecting international patients with affordable, high-quality medical treatments across our global network of partner hospitals and clinics.</p>
+                        
+                        <div class="feature-list">
+                            <div class="feature-item">
+                                <i class="fas fa-check-circle text-primary"></i>
+                                <span>Vetted medical professionals and facilities</span>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-check-circle text-primary"></i>
+                                <span>Comprehensive care coordination</span>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-check-circle text-primary"></i>
+                                <span>Transparent pricing and procedures</span>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-check-circle text-primary"></i>
+                                <span>24/7 multilingual support</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us Section -->
+    <section class="py-5 bg-primary text-white">
+        <div class="container">
+            <div class="row justify-content-center mb-5">
+                <div class="col-lg-8 text-center" data-aos="fade-up">
+                    <h2 class="section-title text-white">Why Choose Go4Health Global?</h2>
+                    <p class="section-subtitle">Experience healthcare without borders with our comprehensive medical tourism services</p>
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="col-lg-3 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="why-choose-card text-center">
+                        <div class="why-choose-icon">
+                            <i class="fas fa-award"></i>
+                        </div>
+                        <h4>10+ Years Experience</h4>
+                        <p>Over a decade of expertise in international medical tourism with thousands of successful treatments</p>
+                    </div>
+                </div>
+                
+                <div class="col-lg-3 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="why-choose-card text-center">
+                        <div class="why-choose-icon">
+                            <i class="fas fa-users-cog"></i>
+                        </div>
+                        <h4>Dedicated Care Team</h4>
+                        <p>Personal medical coordinators assigned to guide you through every step of your healthcare journey</p>
+                    </div>
+                </div>
+                
+                <div class="col-lg-3 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="300">
+                    <div class="why-choose-card text-center">
+                        <div class="why-choose-icon">
+                            <i class="fas fa-money-bill-wave"></i>
+                        </div>
+                        <h4>Cost Savings up to 70%</h4>
+                        <p>Significant savings on medical procedures without compromising on quality or safety standards</p>
+                    </div>
+                </div>
+                
+                <div class="col-lg-3 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="400">
+                    <div class="why-choose-card text-center">
+                        <div class="why-choose-icon">
+                            <i class="fas fa-headset"></i>
+                        </div>
+                        <h4>24/7 Global Support</h4>
+                        <p>Round-the-clock multilingual support team available for emergencies and assistance</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-5 bg-light">
+        <div class="container">
+            <div class="row justify-content-center mb-5">
+                <div class="col-lg-8 text-center" data-aos="fade-up">
+                    <h2 class="section-title">Our Services</h2>
+                    <p class="section-subtitle">Comprehensive medical tourism services tailored to your needs</p>
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-user-md"></i>
+                        </div>
+                        <h4>Medical Consultation</h4>
+                        <p>Connect with top specialists for second opinions and treatment planning.</p>
+                        <ul class="service-features">
+                            <li>Virtual consultations</li>
+                            <li>Medical record reviews</li>
+                            <li>Treatment recommendations</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-plane"></i>
+                        </div>
+                        <h4>Travel Coordination</h4>
+                        <p>Complete travel arrangements including visa assistance and accommodation.</p>
+                        <ul class="service-features">
+                            <li>Visa support</li>
+                            <li>Flight bookings</li>
+                            <li>Medical accommodations</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="300">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-hospital"></i>
+                        </div>
+                        <h4>Hospital Partnerships</h4>
+                        <p>Access to premier healthcare facilities with international accreditation.</p>
+                        <ul class="service-features">
+                            <li>JCI accredited facilities</li>
+                            <li>Board-certified doctors</li>
+                            <li>Advanced medical technology</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="400">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-language"></i>
+                        </div>
+                        <h4>Translation Services</h4>
+                        <p>Professional medical translation and interpretation services.</p>
+                        <ul class="service-features">
+                            <li>Medical interpreters</li>
+                            <li>Document translation</li>
+                            <li>Cultural mediation</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="500">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-hand-holding-heart"></i>
+                        </div>
+                        <h4>Post-Care Support</h4>
+                        <p>Comprehensive follow-up care and recovery assistance.</p>
+                        <ul class="service-features">
+                            <li>Recovery monitoring</li>
+                            <li>Follow-up appointments</li>
+                            <li>Rehabilitation coordination</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="600">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-dollar-sign"></i>
+                        </div>
+                        <h4>Financial Assistance</h4>
+                        <p>Transparent pricing and flexible payment options for your treatment.</p>
+                        <ul class="service-features">
+                            <li>Cost estimates</li>
+                            <li>Payment plans</li>
+                            <li>Insurance coordination</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Destinations Section -->
+    <section id="destinations" class="py-5">
+        <div class="container">
+            <div class="row justify-content-center mb-5">
+                <div class="col-lg-8 text-center" data-aos="fade-up">
+                    <h2 class="section-title">Our Global Network</h2>
+                    <p class="section-subtitle">World-class healthcare across four continents</p>
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="col-lg-3 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="destination-card">
+                        <div class="destination-image">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <h4>Europe</h4>
+                        <p>Leading medical centers in UK, Germany, and Switzerland</p>
+                        <ul class="destination-features">
+                            <li>Advanced cardiac care</li>
+                            <li>Oncology treatments</li>
+                            <li>Orthopedic surgery</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="col-lg-3 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="destination-card">
+                        <div class="destination-image">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <h4>North America</h4>
+                        <p>Renowned hospitals in USA and Canada</p>
+                        <ul class="destination-features">
+                            <li>Cancer treatment</li>
+                            <li>Neurosurgery</li>
+                            <li>Organ transplants</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                
+                
+                <div class="col-lg-3 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="400">
+                    <div class="destination-card">
+                        <div class="destination-image">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <h4>Africa</h4>
+                        <p>Quality healthcare in South Africa and Morocco</p>
+                        <ul class="destination-features">
+                            <li>General surgery</li>
+                            <li>Dental care</li>
+                            <li>Wellness programs</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section 
+    <section id="testimonials" class="py-5 bg-primary text-white">
+        <div class="container">
+            <div class="row justify-content-center mb-5">
+                <div class="col-lg-8 text-center" data-aos="fade-up">
+                    <h2 class="section-title text-white">What Our Patients Say</h2>
+                    <p class="section-subtitle">Real stories from patients who trusted us with their healthcare journey</p>
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="col-lg-4 mb-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="testimonial-card">
+                        <div class="testimonial-content">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <p>"Go4Health Global made my cardiac surgery in Germany seamless. From consultation to recovery, every detail was perfectly managed."</p>
+                        </div>
+                        <div class="testimonial-author">
+                            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=80&h=80&fit=crop&crop=face" alt="Patient" class="author-image">
+                            <div class="author-info">
+                                <h5>James</h5>
+                                <span>United Kingdom</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 mb-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="testimonial-card">
+                        <div class="testimonial-content">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <p>"Exceptional service! The team coordinated my orthopedic treatment in Dubai with such professionalism and care."</p>
+                        </div>
+                        <div class="testimonial-author">
+                            <img src="https://images.unsplash.com/photo-1494790108755-2616b612b120?w=80&h=80&fit=crop&crop=face" alt="Patient" class="author-image">
+                            <div class="author-info">
+                                <h5>Sarah </h5>
+                                <span>Australia</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 mb-4" data-aos="fade-up" data-aos-delay="300">
+                    <div class="testimonial-card">
+                        <div class="testimonial-content">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <p>"From Nigeria to Canada for my cancer treatment - Go4Health Global was with me every step of the way. Truly life-changing."</p>
+                        </div>
+                        <div class="testimonial-author">
+                            <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=80&h=80&fit=crop&crop=face" alt="Patient" class="author-image">
+                            <div class="author-info">
+                                <h5>David Okafor</h5>
+                                <span>Nigeria</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    -->
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-5">
+        <div class="container">
+            <div class="row justify-content-center mb-5">
+                <div class="col-lg-8 text-center" data-aos="fade-up">
+                    <h2 class="section-title">Get In Touch</h2>
+                    <p class="section-subtitle">Ready to start your healthcare journey? Contact our expert team today.</p>
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <div class="contact-form-wrapper" data-aos="fade-up">
+                        <form id="contactForm" class="contact-form">
+                            <div class="row">
+                                <div class="col-md-6 mb-3">
+                                    <label for="firstName" class="form-label">First Name</label>
+                                    <input type="text" class="form-control" id="firstName" required>
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <label for="lastName" class="form-label">Last Name</label>
+                                    <input type="text" class="form-control" id="lastName" required>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6 mb-3">
+                                    <label for="email" class="form-label">Email</label>
+                                    <input type="email" class="form-control" id="email" required>
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <label for="phone" class="form-label">Phone</label>
+                                    <input type="tel" class="form-control" id="phone">
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <label for="treatment" class="form-label">Treatment Interest</label>
+                                <select class="form-select" id="treatment">
+                                    <option value="">Select Treatment Type</option>
+                                    <option value="cardiac">Cardiac Care</option>
+                                    <option value="oncology">Oncology</option>
+                                    <option value="orthopedic">Orthopedic</option>
+                                    <option value="cosmetic">Cosmetic Surgery</option>
+                                    <option value="fertility">Fertility Treatment</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+                            <div class="mb-3">
+                                <label for="message" class="form-label">Message</label>
+                                <textarea class="form-control" id="message" rows="5" placeholder="Tell us about your healthcare needs..."></textarea>
+                            </div>
+                            <div class="text-center">
+                                <button type="submit" class="btn btn-primary btn-lg">Send Message</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row mt-5">
+                <div class="col-lg-4 text-center mb-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="contact-info">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <h4>Headquarters</h4>
+                        <p>London, United Kingdom<br>Global Operations Center</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 text-center mb-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="contact-info">
+                        <i class="fas fa-phone"></i>
+                        <h4>24/7 Hotline</h4>
+                        <p>+44 20 7123 4567<br>Emergency Support Available</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 text-center mb-4" data-aos="fade-up" data-aos-delay="300">
+                    <div class="contact-info">
+                        <i class="fas fa-envelope"></i>
+                        <h4>Email Support</h4>
+                        <p>info@go4healthglobal.com<br>Quick Response Guaranteed</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer bg-dark text-white py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-4">
+                    <img src="images/logo.svg" alt="Go4Health Global" height="60" class="mb-3">
+                    <p>Connecting international patients with world-class healthcare across four continents. Your health, our global network.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <h5>Quick Links</h5>
+                    <ul class="footer-links">
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#destinations">Destinations</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <h5>Services</h5>
+                    <ul class="footer-links">
+                        <li><a href="#">Medical Tourism</a></li>
+                        <li><a href="#">Second Opinions</a></li>
+                        <li><a href="#">Travel Coordination</a></li>
+                        <li><a href="#">Post-Care Support</a></li>
+                    </ul>
+                </div>
+                
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <h5>Regions</h5>
+                    <ul class="footer-links">
+                        <li><a href="#">Europe</a></li>
+                        <li><a href="#">North America</a></li>
+                        <li><a href="#">Middle East</a></li>
+                        <li><a href="#">Africa</a></li>
+                    </ul>
+                </div>
+                
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <h5>Support</h5>
+                    <ul class="footer-links">
+                        <li><a href="#">Help Center</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Emergency</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <hr class="my-4">
+            
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <p class="mb-0">&copy; 2024 Go4Health Global. All rights reserved.</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <p class="mb-0">Headquartered in London | Global Healthcare Network</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Consultation Modal -->
+    <div class="modal fade" id="consultationModal" tabindex="-1" aria-labelledby="consultationModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="consultationModalLabel">Free Medical Consultation</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="consultationForm">
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <label for="consultFirstName" class="form-label">First Name *</label>
+                                <input type="text" class="form-control" id="consultFirstName" required>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label for="consultLastName" class="form-label">Last Name *</label>
+                                <input type="text" class="form-control" id="consultLastName" required>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <label for="consultEmail" class="form-label">Email *</label>
+                                <input type="email" class="form-control" id="consultEmail" required>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label for="consultPhone" class="form-label">Phone *</label>
+                                <input type="tel" class="form-control" id="consultPhone" required>
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="consultCountry" class="form-label">Country *</label>
+                            <input type="text" class="form-control" id="consultCountry" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="consultCondition" class="form-label">Medical Condition *</label>
+                            <textarea class="form-control" id="consultCondition" rows="3" placeholder="Briefly describe your medical condition or treatment needs..." required></textarea>
+                        </div>
+                        <div class="mb-3">
+                            <label for="consultPreferredDestination" class="form-label">Preferred Treatment Destination</label>
+                            <select class="form-select" id="consultPreferredDestination">
+                                <option value="">No Preference</option>
+                                <option value="europe">Europe</option>
+                                <option value="north-america">North America</option>
+                                <option value="middle-east">Middle East</option>
+                                <option value="africa">Africa</option>
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="consultConsent" required>
+                                <label class="form-check-label" for="consultConsent">
+                                    I consent to Go4Health Global contacting me about my medical consultation request *
+                                </label>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                    <button type="submit" form="consultationForm" class="btn btn-primary">Request Consultation</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Chatbot -->
+    <div id="chatbot" class="chatbot">
+        <div class="chatbot-header" id="chatbotHeader">
+            <i class="fas fa-comments"></i>
+            <span>Chat with us</span>
+            <button class="chatbot-toggle" id="chatbotToggle">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        <div class="chatbot-body" id="chatbotBody">
+            <div class="chatbot-messages" id="chatbotMessages">
+                <div class="message bot-message">
+                    <div class="message-content">
+                        Hello! I'm here to help you with your healthcare journey. How can I assist you today?
+                    </div>
+                    <div class="message-time">Now</div>
+                </div>
+            </div>
+            <div class="chatbot-input">
+                <input type="text" id="chatbotInput" placeholder="Type your message...">
+                <button id="chatbotSend">
+                    <i class="fas fa-paper-plane"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Floating Chat Button -->
+    <button class="chat-fab" id="chatFab">
+        <i class="fas fa-comments"></i>
+    </button>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- AOS JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+</body>
+</html>

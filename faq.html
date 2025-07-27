@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ - Go4Health Global | Medical Tourism Questions Answered</title>
+    <meta name="description" content="Find answers to frequently asked questions about medical tourism, treatment costs, travel arrangements, and more with Go4Health Global.">
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- AOS (Animate On Scroll) -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top custom-navbar">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="images/logo.svg" alt="Go4Health Global" height="50">
+            </a>
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="aboutDropdown" role="button" data-bs-toggle="dropdown">
+                            About
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="about.html">About Us</a></li>
+                            <li><a class="dropdown-item" href="about.html#team">Our Team</a></li>
+                            <li><a class="dropdown-item" href="about.html#accreditations">Accreditations</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="servicesDropdown" role="button" data-bs-toggle="dropdown">
+                            Services
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="services.html">All Services</a></li>
+                            <li><a class="dropdown-item" href="services.html#medical-consultation">Medical Consultation</a></li>
+                            <li><a class="dropdown-item" href="services.html#travel-coordination">Travel Coordination</a></li>
+                            <li><a class="dropdown-item" href="services.html#post-care">Post-Care Support</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="destinations.html">Destinations</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle active" href="#" id="resourcesDropdown" role="button" data-bs-toggle="dropdown">
+                            Resources
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="blog.html">Blog & News</a></li>
+                            <li><a class="dropdown-item" href="faq.html">FAQ</a></li>
+                            <li><a class="dropdown-item" href="patient-stories.html">Patient Stories</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="btn btn-primary ms-2" href="#consultation">Free Consultation</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section-small">
+        <div class="hero-overlay"></div>
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-12 text-center" data-aos="fade-up">
+                    <h1 class="hero-title">Frequently Asked Questions</h1>
+                    <p class="hero-subtitle">Get answers to common medical tourism questions</p>
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb justify-content-center">
+                            <li class="breadcrumb-item"><a href="index.html" class="text-white">Home</a></li>
+                            <li class="breadcrumb-item active text-white" aria-current="page">FAQ</li>
+                        </ol>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Search Section -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8" data-aos="fade-up">
+                    <div class="faq-search">
+                        <div class="search-box">
+                            <input type="text" id="faqSearch" class="form-control" placeholder="Search for answers...">
+                            <i class="fas fa-search search-icon"></i>
+                        </div>
+                        <p class="text-center mt-3 text-muted">Can't find what you're looking for? <a href="contact.html" class="text-primary">Contact our support team</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Categories -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row justify-content-center mb-5">
+                <div class="col-lg-8 text-center" data-aos="fade-up">
+                    <h2 class="section-title">Browse by Category</h2>
+                    <p class="section-subtitle">Find answers organized by topic</p>
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="faq-category-card" data-category="general">
+                        <div class="category-icon">
+                            <i class="fas fa-info-circle"></i>
+                        </div>
+                        <h4>General Information</h4>
+                        <p>Basic questions about medical tourism and Go4Health Global</p>
+                        <span class="question-count">8 Questions</span>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="faq-category-card" data-category="costs">
+                        <div class="category-icon">
+                            <i class="fas fa-dollar-sign"></i>
+                        </div>
+                        <h4>Costs & Payment</h4>
+                        <p>Pricing, insurance, and payment options</p>
+                        <span class="question-count">6 Questions</span>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="300">
+                    <div class="faq-category-card" data-category="travel">
+                        <div class="category-icon">
+                            <i class="fas fa-plane"></i>
+                        </div>
+                        <h4>Travel & Logistics</h4>
+                        <p>Visa requirements, travel arrangements, and accommodations</p>
+                        <span class="question-count">7 Questions</span>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="400">
+                    <div class="faq-category-card" data-category="medical">
+                        <div class="category-icon">
+                            <i class="fas fa-user-md"></i>
+                        </div>
+                        <h4>Medical Care</h4>
+                        <p>Treatment quality, doctor credentials, and medical procedures</p>
+                        <span class="question-count">10 Questions</span>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="500">
+                    <div class="faq-category-card" data-category="safety">
+                        <div class="category-icon">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <h4>Safety & Security</h4>
+                        <p>Patient safety, data protection, and emergency procedures</p>
+                        <span class="question-count">5 Questions</span>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="600">
+                    <div class="faq-category-card" data-category="followup">
+                        <div class="category-icon">
+                            <i class="fas fa-heart"></i>
+                        </div>
+                        <h4>Post-Treatment Care</h4>
+                        <p>Recovery, follow-up care, and ongoing support</p>
+                        <span class="question-count">4 Questions</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Accordion -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    
+                    <!-- General Information -->
+                    <div class="faq-section" id="general-section" data-aos="fade-up">
+                        <h3 class="faq-section-title">
+                            <i class="fas fa-info-circle"></i>
+                            General Information
+                        </h3>
+                        
+                        <div class="accordion" id="generalAccordion">
+                            <div class="accordion-item faq-item">
+                                <h2 class="accordion-header" id="general1">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-general1">
+                                        What is medical tourism?
+                                    </button>
+                                </h2>
+                                <div id="collapse-general1" class="accordion-collapse collapse" data-bs-parent="#generalAccordion">
+                                    <div class="accordion-body">
+                                        Medical tourism refers to traveling to another country to receive medical treatment. Patients typically choose medical tourism to access high-quality healthcare at lower costs, receive treatments not available in their home country, or avoid long waiting times. Go4Health Global facilitates this process by connecting patients with accredited hospitals and providing comprehensive support throughout the journey.
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="accordion-item faq-item">
+                                <h2 class="accordion-header" id="general2">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-general2">
+                                        How does Go4Health Global work?
+                                    </button>
+                                </h2>
+                                <div id="collapse-general2" class="accordion-collapse collapse" data-bs-parent="#generalAccordion">
+                                    <div class="accordion-body">
+                                        Our process is simple: 1) Free consultation to understand your needs, 2) Personalized treatment plan and destination recommendation, 3) Complete travel and medical coordination, 4) Treatment at our partner hospitals, 5) Post-treatment care and follow-up. We handle everything from visa assistance to accommodation booking, ensuring a seamless experience.
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="accordion-item faq-item">
+                                <h2 class="accordion-header" id="general3">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-general3">
+                                        Which countries do you operate in?
+                                    </button>
+                                </h2>
+                                <div id="collapse-general3" class="accordion-collapse collapse" data-bs-parent="#generalAccordion">
+                                    <div class="accordion-body">
+                                        We operate across four continents with partner hospitals in Europe (UK, Germany, Switzerland), North America (USA, Canada), Middle East (UAE, Jordan), and Africa (South Africa, Morocco). Each destination is carefully selected for its medical excellence, safety standards, and cost-effectiveness.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Costs & Payment -->
+                    <div class="faq-section" id="costs-section" data-aos="fade-up">
+                        <h3 class="faq-section-title">
+                            <i class="fas fa-dollar-sign"></i>
+                            Costs & Payment
+                        </h3>
+                        
+                        <div class="accordion" id="costsAccordion">
+                            <div class="accordion-item faq-item">
+                                <h2 class="accordion-header" id="costs1">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-costs1">
+                                        How much can I save with medical tourism?
+                                    </button>
+                                </h2>
+                                <div id="collapse-costs1" class="accordion-collapse collapse" data-bs-parent="#costsAccordion">
+                                    <div class="accordion-body">
+                                        Savings vary by destination and treatment type, but typically range from 30-75% compared to US/UK prices. For example, a heart bypass surgery costing $120,000 in the US might cost $35,000 in South Africa. Even including travel and accommodation costs, patients often save 50-70% on their total medical expenses.
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="accordion-item faq-item">
+                                <h2 class="accordion-header" id="costs2">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-costs2">
+                                        Does insurance cover medical tourism?
+                                    </button>
+                                </h2>
+                                <div id="collapse-costs2" class="accordion-collapse collapse" data-bs-parent="#costsAccordion">
+                                    <div class="accordion-body">
+                                        Some insurance plans do cover medical tourism, particularly if the treatment is medically necessary and not available locally. We work with various insurance providers and can help coordinate coverage. Additionally, some employers and insurance companies are beginning to offer medical tourism benefits due to the significant cost savings.
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="accordion-item faq-item">
+                                <h2 class="accordion-header" id="costs3">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-costs3">
+                                        What payment options are available?
+                                    </button>
+                                </h2>
+                                <div id="collapse-costs3" class="accordion-collapse collapse" data-bs-parent="#costsAccordion">
+                                    <div class="accordion-body">
+                                        We offer flexible payment options including: upfront payment with discounts, installment plans, medical loans through our financing partners, and direct billing to insurance companies where applicable. Payment methods include wire transfers, credit cards, and bank transfers. All payments are secured and processed through encrypted systems.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Travel & Logistics -->
+                    <div class="faq-section" id="travel-section" data-aos="fade-up">
+                        <h3 class="faq-section-title">
+                            <i class="fas fa-plane"></i>
+                            Travel & Logistics
+                        </h3>
+                        
+                        <div class="accordion" id="travelAccordion">
+                            <div class="accordion-item faq-item">
+                                <h2 class="accordion-header" id="travel1">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-travel1">
+                                        Do you help with visa applications?
+                                    </button>
+                                </h2>
+                                <div id="collapse-travel1" class="accordion-collapse collapse" data-bs-parent="#travelAccordion">
+                                    <div class="accordion-body">
+                                        Yes, we provide comprehensive visa support including document preparation, application assistance, and liaison with embassies/consulates. We can also provide medical visa invitation letters and support documentation to expedite the process. Our team is familiar with visa requirements for all our destination countries.
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="accordion-item faq-item">
+                                <h2 class="accordion-header" id="travel2">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-travel2">
+                                        What about accommodation during treatment?
+                                    </button>
+                                </h2>
+                                <div id="collapse-travel2" class="accordion-collapse collapse" data-bs-parent="#travelAccordion">
+                                    <div class="accordion-body">
+                                        We arrange accommodation based on your budget and medical needs. Options include medical hotels near hospitals, recovery centers with nursing support, luxury hotels for comfort during recovery, and apartment rentals for longer stays. All accommodations are selected for their proximity to medical facilities and suitability for recovering patients.
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="accordion-item faq-item">
+                                <h2 class="accordion-header" id="travel3">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-travel3">
+                                        Can I bring a companion?
+                                    </button>
+                                </h2>
+                                <div id="collapse-travel3" class="accordion-collapse collapse" data-bs-parent="#travelAccordion">
+                                    <div class="accordion-body">
+                                        Absolutely! We encourage patients to bring a companion for emotional support and assistance during recovery. We can arrange companion visas, additional accommodation, local transportation, and activities for companions during treatment periods. Many of our packages include companion support services.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Medical Care -->
+                    <div class="faq-section" id="medical-section" data-aos="fade-up">
+                        <h3 class="faq-section-title">
+                            <i class="fas fa-user-md"></i>
+                            Medical Care
+                        </h3>
+                        
+                        <div class="accordion" id="medicalAccordion">
+                            <div class="accordion-item faq-item">
+                                <h2 class="accordion-header" id="medical1">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-medical1">
+                                        How do you ensure quality of care?
+                                    </button>
+                                </h2>
+                                <div id="collapse-medical1" class="accordion-collapse collapse" data-bs-parent="#medicalAccordion">
+                                    <div class="accordion-body">
+                                        All our partner hospitals are JCI (Joint Commission International) accredited or equivalent, ensuring they meet the highest international standards. We thoroughly vet medical facilities, verify doctor credentials, conduct regular quality audits, and maintain strict selection criteria. Patient feedback and outcomes are continuously monitored to maintain our quality standards.
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="accordion-item faq-item">
+                                <h2 class="accordion-header" id="medical2">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-medical2">
+                                        Are the doctors qualified?
+                                    </button>
+                                </h2>
+                                <div id="collapse-medical2" class="accordion-collapse collapse" data-bs-parent="#medicalAccordion">
+                                    <div class="accordion-body">
+                                        Yes, all our partner doctors are board-certified specialists with international training and experience. Many have trained or worked in leading medical institutions in the US, UK, or Europe. We verify medical degrees, specialization certificates, hospital affiliations, and ongoing professional development. Patient reviews and surgical outcomes are also considered in our selection process.
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="accordion-item faq-item">
+                                <h2 class="accordion-header" id="medical3">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-medical3">
+                                        What if complications arise during treatment?
+                                    </button>
+                                </h2>
+                                <div id="collapse-medical3" class="accordion-collapse collapse" data-bs-parent="#medicalAccordion">
+                                    <div class="accordion-body">
+                                        Our partner hospitals are equipped to handle complications with full ICU facilities, emergency services, and specialist backup. We provide 24/7 medical coordination support, emergency contact services, and liaison with your home country doctors if needed. Medical insurance coverage for complications is also available and recommended for all patients.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Safety & Security -->
+                    <div class="faq-section" id="safety-section" data-aos="fade-up">
+                        <h3 class="faq-section-title">
+                            <i class="fas fa-shield-alt"></i>
+                            Safety & Security
+                        </h3>
+                        
+                        <div class="accordion" id="safetyAccordion">
+                            <div class="accordion-item faq-item">
+                                <h2 class="accordion-header" id="safety1">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-safety1">
+                                        How do you protect patient data?
+                                    </button>
+                                </h2>
+                                <div id="collapse-safety1" class="accordion-collapse collapse" data-bs-parent="#safetyAccordion">
+                                    <div class="accordion-body">
+                                        We are fully HIPAA compliant and follow strict data protection protocols. All patient information is encrypted, stored on secure servers, and accessed only by authorized personnel. We use secure communication channels, regularly update security systems, and conduct security audits. Patient consent is required for all data sharing, and you maintain full control over your medical information.
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="accordion-item faq-item">
+                                <h2 class="accordion-header" id="safety2">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-safety2">
+                                        What emergency support do you provide?
+                                    </button>
+                                </h2>
+                                <div id="collapse-safety2" class="accordion-collapse collapse" data-bs-parent="#safetyAccordion">
+                                    <div class="accordion-body">
+                                        We provide 24/7 emergency support including medical emergency hotline, local emergency coordination, contact with family/home doctors, medical evacuation insurance coordination, and embassy/consulate liaison if needed. Each patient receives emergency contact cards and has access to our global support network throughout their journey.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Post-Treatment Care -->
+                    <div class="faq-section" id="followup-section" data-aos="fade-up">
+                        <h3 class="faq-section-title">
+                            <i class="fas fa-heart"></i>
+                            Post-Treatment Care
+                        </h3>
+                        
+                        <div class="accordion" id="followupAccordion">
+                            <div class="accordion-item faq-item">
+                                <h2 class="accordion-header" id="followup1">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-followup1">
+                                        What follow-up care do you provide?
+                                    </button>
+                                </h2>
+                                <div id="collapse-followup1" class="accordion-collapse collapse" data-bs-parent="#followupAccordion">
+                                    <div class="accordion-body">
+                                        Our follow-up care includes virtual consultations with your treating physician, coordination with your home country doctors, medical record transfers, medication management support, physical therapy coordination, and regular check-ins during recovery. We maintain contact for up to one year post-treatment, depending on your package level.
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="accordion-item faq-item">
+                                <h2 class="accordion-header" id="followup2">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-followup2">
+                                        Can I get my medical records?
+                                    </button>
+                                </h2>
+                                <div id="collapse-followup2" class="accordion-collapse collapse" data-bs-parent="#followupAccordion">
+                                    <div class="accordion-body">
+                                        Yes, you will receive complete medical records including surgical reports, diagnostic tests, medication lists, and follow-up instructions. Records are provided in digital format and can be shared with your home country doctors. We also provide certified translations if needed and can facilitate direct doctor-to-doctor communication for seamless care continuity.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Still Have Questions Section -->
+    <section class="py-5 bg-primary text-white">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 text-center" data-aos="fade-up">
+                    <h2 class="section-title text-white">Still Have Questions?</h2>
+                    <p class="section-subtitle">Our medical tourism experts are here to help you every step of the way</p>
+                    <div class="contact-options">
+                        <div class="row">
+                            <div class="col-md-4 mb-3">
+                                <div class="contact-option">
+                                    <i class="fas fa-phone"></i>
+                                    <h5>Call Us</h5>
+                                    <p>+44 77 7102 0403</p>
+                                    <small>24/7 Support Available</small>
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-3">
+                                <div class="contact-option">
+                                    <i class="fas fa-envelope"></i>
+                                    <h5>Email Us</h5>
+                                    <p>info@go4healthglobal.com</p>
+                                    <small>Response within 2 hours</small>
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-3">
+                                <div class="contact-option">
+                                    <i class="fas fa-comments"></i>
+                                    <h5>Live Chat</h5>
+                                    <p>Instant messaging</p>
+                                    <small>Available 16 hours/day</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cta-buttons mt-4">
+                        <a href="#consultation" class="btn btn-light btn-lg me-3">Free Consultation</a>
+                        <a href="contact.html" class="btn btn-outline-light btn-lg">Contact Us</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer bg-dark text-white py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-4">
+                    <img src="images/logo.svg" alt="Go4Health Global" height="60" class="mb-3">
+                    <p>Connecting international patients with world-class healthcare across four continents. Your health, our global network.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <h5>Quick Links</h5>
+                    <ul class="footer-links">
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="destinations.html">Destinations</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <h5>Services</h5>
+                    <ul class="footer-links">
+                        <li><a href="services.html">Medical Tourism</a></li>
+                        <li><a href="services.html">Second Opinions</a></li>
+                        <li><a href="services.html">Travel Coordination</a></li>
+                        <li><a href="services.html">Post-Care Support</a></li>
+                    </ul>
+                </div>
+                
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <h5>Resources</h5>
+                    <ul class="footer-links">
+                        <li><a href="blog.html">Blog & News</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                        <li><a href="patient-stories.html">Patient Stories</a></li>
+                        <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <h5>Support</h5>
+                    <ul class="footer-links">
+                        <li><a href="contact.html">Help Center</a></li>
+                        <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                        <li><a href="terms-of-service.html">Terms of Service</a></li>
+                        <li><a href="contact.html">Emergency</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <hr class="my-4">
+            
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <p class="mb-0">&copy; 2024 Go4Health Global. All rights reserved.</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <p class="mb-0">Headquartered in London | Global Healthcare Network</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- AOS JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+    
+    <!-- FAQ Search JS -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const searchInput = document.getElementById('faqSearch');
+            const faqItems = document.querySelectorAll('.faq-item');
+            
+            searchInput.addEventListener('input', function() {
+                const searchTerm = this.value.toLowerCase();
+                
+                faqItems.forEach(item => {
+                    const question = item.querySelector('.accordion-button').textContent.toLowerCase();
+                    const answer = item.querySelector('.accordion-body').textContent.toLowerCase();
+                    
+                    if (question.includes(searchTerm) || answer.includes(searchTerm)) {
+                        item.style.display = 'block';
+                    } else {
+                        item.style.display = searchTerm === '' ? 'block' : 'none';
+                    }
+                });
+            });
+            
+            // Category card clicks
+            document.querySelectorAll('.faq-category-card').forEach(card => {
+                card.addEventListener('click', function() {
+                    const category = this.dataset.category;
+                    const section = document.getElementById(category + '-section');
+                    if (section) {
+                        section.scrollIntoView({ behavior: 'smooth' });
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
